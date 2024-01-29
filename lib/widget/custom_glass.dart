@@ -38,7 +38,7 @@ class CustomGlass extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(thisRadius),
                 border: Border.all(
-                  color: whiteColor.withOpacity(0.13),
+                  color: whiteColor.withOpacity(0.25),
                 ),
                 gradient: LinearGradient(
                   colors: [
