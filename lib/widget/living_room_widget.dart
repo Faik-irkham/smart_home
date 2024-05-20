@@ -69,12 +69,16 @@ class _LivingRoomGridState extends State<LivingRoomGrid> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(
-                      devices[index].name,
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: whiteColor,
-                        fontWeight: FontWeight.w500,
+                    Flexible(
+                      child: Text(
+                        devices[index].name,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: whiteColor,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],

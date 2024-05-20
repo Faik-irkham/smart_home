@@ -42,7 +42,7 @@ class CustomGlass extends StatelessWidget {
                 ),
                 gradient: LinearGradient(
                   colors: [
-                    blueColor.withOpacity(0.13),
+                    blueColor.withOpacity(0.4),
                     whiteColor.withOpacity(0.05),
                   ],
                   begin: Alignment.topLeft,
