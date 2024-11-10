@@ -15,14 +15,16 @@ class _RoomGridViewState extends State<RoomGridView> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      padding: const EdgeInsets.only(bottom: 50, top: 15),
+      itemCount: 8, // Adjust the itemCount based on your data
+      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 8.0,
       ),
-      padding: const EdgeInsets.only(bottom: 50, top: 15),
-      itemCount: 8, // Adjust the itemCount based on your data
-      itemBuilder: (BuildContext context, int index) {
+      itemBuilder: (context, int index) {
         return CustomGlass(
           thisWidth: 80,
           thisHeight: 80,

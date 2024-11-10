@@ -36,14 +36,16 @@ class _LivingRoomGridState extends State<LivingRoomGrid> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      padding: const EdgeInsets.only(bottom: 50, top: 15),
+      itemCount: devices.length,
+      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         crossAxisSpacing: 8.0,
         mainAxisSpacing: 8.0,
       ),
-      padding: const EdgeInsets.only(bottom: 50, top: 15),
-      itemCount: devices.length,
-      itemBuilder: (BuildContext context, int index) {
+      itemBuilder: (context, int index) {
         return CustomGlass(
           thisWidth: 80,
           thisHeight: 80,

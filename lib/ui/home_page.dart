@@ -35,8 +35,10 @@ class _HomePageState extends State<HomePage>
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/bg-smart-3.jpg'),
+            image: AssetImage('assets/images/bg-home-3.jpg'),
             fit: BoxFit.cover,
+            invertColors: true,
+            opacity: 0.5,
           ),
         ),
         child: Column(
